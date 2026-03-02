@@ -28,6 +28,35 @@ Instead of manually searching through hundreds of assessments, this system:
 7. Return structured JSON response
 
 ---
+## 🤖 Model Used
+
+### `all-MiniLM-L6-v2`
+
+This model is used inside the RAG engine to generate semantic embeddings.
+
+It is loaded using:
+
+```python
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer("all-MiniLM-L6-v2")
+```
+
+### Why This Model?
+
+- Lightweight and fast
+- High-quality semantic embeddings
+- Optimized for similarity search
+- Suitable for production
+
+The model converts both:
+
+- SHL assessment descriptions
+- User Job Description
+
+into dense vector embeddings for similarity comparison.
+
+---
 
 ## ⚙️ Technology Stack
 
@@ -264,6 +293,12 @@ Looking for a backend developer with Python, REST APIs, and problem-solving skil
 - Cognitive Ability Test
 
 ---
+## 🎥 Demo  output
+
+https://github.com/sushma-star/shl-ass-recommendation/issues/1
+
+---
+
 
 ## 👩‍💻 Author
 
